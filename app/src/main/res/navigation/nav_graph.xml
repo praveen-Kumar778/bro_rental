@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/startSliderFragment"
+        android:name="com.example.brorentalapp.ui.fragments.StartSliderFragment"
+        android:label="fragment_start_slider"
+        tools:layout="@layout/fragment_start_slider" >
+        <action
+            android:id="@+id/action_startSliderFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.brorentalapp.ui.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_OTPScreenFragment"
+            app:destination="@id/OTPScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.brorentalapp.ui.fragments.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_startSliderFragment"
+            app:destination="@id/startSliderFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_termsAndconditionsFragment"
+            app:destination="@id/termsAndconditionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsAndconditionsFragment"
+        android:name="com.example.brorentalapp.ui.fragments.TermsAndconditionsFragment"
+        android:label="fragment_terms_andconditions"
+        tools:layout="@layout/fragment_terms_andconditions"
+        >
+        <action
+            android:id="@+id/action_termsAndconditionsFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.brorentalapp.ui.fragments.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" />
+    <fragment
+        android:id="@+id/OTPScreenFragment"
+        android:name="com.example.brorentalapp.ui.fragments.OTPScreenFragment"
+        android:label="fragment_o_t_p_screen"
+        tools:layout="@layout/fragment_o_t_p_screen" >
+        <action
+            android:id="@+id/action_OTPScreenFragment_to_termsAndconditionsFragment"
+            app:destination="@id/termsAndconditionsFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.fragments.StartSliderFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/nxtBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+      android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:elevation="20dp"
+        android:text="Next >" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/prevBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="35dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:elevation="20dp"
+        android:text="Prev" />
+
+    <TextView
+        android:id="@+id/skipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/white"
+        android:elevation="20dp"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:text="Skip >>" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.TermsAndconditionsFragment">
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="15sp"
+               android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan eleifend erat, et facilisis erat euismod at. Nulla facilisi. Nulla facilisi. Integer scelerisque erat sit amet enim feugiat, id hendrerit arcu laoreet. Fusce nec interdum sem, sit amet vestibulum dui. Fusce tincidunt, ante at tincidunt iaculis, turpis dui tincidunt libero, non tristique felis ex ac justo. Donec elementum, turpis a posuere gravida, metus elit mattis eros, eget malesuada felis ligula in justo. Sed vitae lacus sapien. Nullam cursus a turpis nec tincidunt. Vestibulum fermentum sed urna et cursus. In hac habitasse platea dictumst. Suspendisse bibendum vitae mi in bibendum.
+
+Nunc eget dapibus tortor. Curabitur finibus sapien ac purus cursus, et venenatis justo tincidunt. In dignissim sem non turpis mattis, sit amet euismod lectus bibendum. Integer sit amet mauris quis justo venenatis auctor eu non libero. Proin facilisis arcu quis sem feugiat, vel tristique odio volutpat. Phasellus et dolor eget purus rhoncus feugiat. Curabitur finibus risus ligula, ut tempus est auctor at. Curabitur ultricies varius viverra. Aenean interdum orci in eros ullamcorper egestas. Quisque semper vestibulum facilisis. Nullam tristique in leo sit amet imperdiet.
+
+Mauris ut erat quis purus varius cursus. Aliquam tincidunt eget libero et eleifend. Sed vel turpis malesuada, suscipit eros ut, pellentesque orci. Cras quis orci at ex imperdiet blandit. Fusce eget auctor urna. Sed et tellus eget augue rhoncus volutpat sit amet non turpis. Nullam at tristique ipsum, eget sollicitudin sapien. Cras sed justo ut ante varius hendrerit. Sed ultrices eros nulla, id feugiat urna rhoncus nec. Integer condimentum orci vitae bibendum. Nunc iaculis orci in nibh euismod, et iaculis massa iacu
+Praesent tincidunt nulla id tristique varius. Fusce in tellus augue. Pellentesque consectetur, sapien eget auctor bibendum, tellus purus interdum felis, vel sodales nunc nulla ac urna. Quisque a luctus eros. Nam a tincidunt ex. Nunc ac eleifend massa. Suspendisse posuere eu est in tristique. Aliquam volutpat quam non libero ultrices, a commodo justo viverra. Sed vel nisl volutpat, tristique turpis nec, varius turpis. Sed sodales, nulla a tincidunt pellentesque, erat dui dictum augue, et tincidunt quam elit quis justo. Nulla facilisi. Sed vel auctor nulla." />
+
+
+           <CheckBox
+               android:id="@+id/termsRBtn"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="I accept all Terms &amp; Conditions"/>
+
+           <Button
+               android:layout_marginHorizontal="20dp"
+               android:id="@+id/submitBtn"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingVertical="15dp"
+               android:textSize="20sp"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="16dp"
+               android:text="Submit" />
+
+       </LinearLayout>
+   </ScrollView>
+
+</FrameLayout>
